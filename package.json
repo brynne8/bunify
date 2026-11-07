@@ -1,0 +1,21 @@
+{
+  "name": "pi-bunify",
+  "version": "0.1.0",
+  "description": "A /bunify prompt template that audits projects for Bun-native replacements",
+  "keywords": [
+    "pi-package",
+    "bun"
+  ],
+  "license": "MIT",
+  "pi": {
+    "prompts": [
+      "./prompts/bunify.md"
+    ]
+  },
+  "files": [
+    "prompts"
+  ],
+  "devDependencies": {
+    "bun-types": "^1.4.4"
+  }
+}
