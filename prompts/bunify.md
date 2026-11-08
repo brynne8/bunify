@@ -66,6 +66,7 @@ Notes:
 | `pg`, `postgres`, `mysql2`, `mariadb` | `Bun.SQL` | rewrite to tagged-template SQL API |
 | `ioredis`, `redis` | `Bun.redis` / `Bun.RedisClient` | direct replacement, except when you need Redis <7.2, Sentinel, or Cluster |
 | `ws` | built-in `WebSocket`; `Bun.serve({ websocket })` | rewrite server/client handlers |
+| `sharp` | `Bun.Image` | direct replacement for resize, rotate, flip, modulate, metadata, and JPEG/PNG/WebP/HEIC/AVIF output; keep only for SVG input, compositing, or formats outside those codecs |
 | `node-fetch`, `cross-fetch`, `whatwg-fetch`, `isomorphic-fetch` | built-in `fetch`, `Request`, `Response`, `Headers`, `FormData` | direct replacement; remove the polyfill |
 | `undici` | built-in `fetch` | direct replacement for fetch; keep only for `MockAgent`, `ProxyAgent`, or other non-fetch APIs |
 | `execa`, `shelljs` | `Bun.$` | rewrite process calls |
